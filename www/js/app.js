@@ -27,6 +27,7 @@ $(document).ready(function () {
 
         var pressed = $(this).attr('data-id');
         var task = $('.task').text() + "";
+        var result = $('.result').text() + "";
         var lastdigit = task.slice(-1);
         var newtask = task;
         switch (pressed) {
@@ -78,6 +79,8 @@ $(document).ready(function () {
 
                 if (['+', '-', '*', '/', '^','('].indexOf(lastdigit) > -1) {
                     newtask = task + pressed;
+                } else if(task=='0'){
+                    newtask = pressed;
                 }
                 break;
                 
@@ -98,7 +101,10 @@ $(document).ready(function () {
                     newtask = task + pressed;
                 }
                 break;
-
+                
+            case 'u':
+                newtask = result;
+                break;
         }
 
         if (newtask == '') {

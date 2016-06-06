@@ -1,0 +1,70 @@
+/*
+Code by Bahram Hasanov.
+http://bahramhasanov.com
+2016
+*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.calculator {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.calculator .screen{
+    height: 20%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: right;
+}
+
+.calculator .screen .task{
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+}
+.calculator .screen .task:after{
+   content: '=';
+}
+
+.calculator .screen .result{
+    font-size: 30px;
+    line-height: 45px;
+}
+
+
+.calculator .keyboard{
+    display: table;
+    width: 100%;
+    height: 80%;
+}
+
+.calculator .keyboard .key_row{
+    display: table-row;
+    width: 100%;
+}
+
+.calculator .keyboard .key_row .key{
+    display: table-cell;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid #A7A7A7;
+    vertical-align: middle;
+    cursor: pointer;
+}

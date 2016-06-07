@@ -9,7 +9,7 @@ function calculate() {
     var task = $('.screen .task').text();
 
     if (['+', '-', '*', '/', '^'].indexOf(task.slice(-1)) < 0) {
-        $('.screen .result').text(math.eval(task));
+        $('.screen .result').text(eval(task));
     }
 
 

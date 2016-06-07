@@ -18,9 +18,6 @@ function calculate() {
 $(document).ready(function () {
     
     
-    FastClick.attach(document.body);
-
-
     $('.task').text(localStorage.getItem('task'));
     
     calculate();
